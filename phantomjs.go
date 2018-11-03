@@ -237,7 +237,7 @@ type errorResponse struct {
 
 // DefaultProcess is a global, shared process.
 // It must be opened before use.
-var DefaultProcess = NewProcess()
+var DefaultProcess = NewProcess(DefaultPort)
 
 // CreateWebPage returns a new instance of a "webpage" using the default process.
 func CreateWebPage() (*WebPage, error) {
@@ -1826,3 +1826,4 @@ function ref(id) {
 	return refs[id];
 }
 `
+Proce
