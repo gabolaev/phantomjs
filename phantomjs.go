@@ -51,10 +51,10 @@ type Process struct {
 }
 
 // NewProcess returns a new instance of Process.
-func NewProcess() *Process {
+func NewProcess(port int) *Process {
 	return &Process{
 		BinPath: DefaultBinPath,
-		Port:    DefaultPort,
+		Port:    port,
 		Stdout:  os.Stdout,
 		Stderr:  os.Stderr,
 	}
